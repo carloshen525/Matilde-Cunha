@@ -2,60 +2,62 @@
   <defs>
     <linearGradient id="ogBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FAF8F5"/>
-      <stop offset="50%" stop-color="#F2EFE9"/>
-      <stop offset="100%" stop-color="#E8E4DC"/>
+      <stop offset="50%" stop-color="#F3EFEB"/>
+      <stop offset="100%" stop-color="#EAE5DC"/>
+    </linearGradient>
+    <linearGradient id="sage" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#68836A"/>
+      <stop offset="100%" stop-color="#4E6750"/>
     </linearGradient>
     <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#C2A676"/>
-      <stop offset="100%" stop-color="#DFC498"/>
-    </linearGradient>
-    <linearGradient id="sage" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6E846C"/>
-      <stop offset="100%" stop-color="#526750"/>
+      <stop offset="100%" stop-color="#DFCAA2"/>
     </linearGradient>
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feGaussianBlur stdDeviation="50" result="blur"/>
     </filter>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#ogBg)"/>
 
-  <!-- Subtle ambient glow orbs -->
-  <circle cx="200" cy="150" r="180" fill="#E2DAD0" opacity="0.6" filter="url(#softGlow)"/>
-  <circle cx="1050" cy="500" r="220" fill="#6E846C" opacity="0.15" filter="url(#softGlow)"/>
+  <!-- Orbs de iluminação suave -->
+  <circle cx="180" cy="140" r="190" fill="#E2DDD5" opacity="0.7" filter="url(#softGlow)"/>
+  <circle cx="1060" cy="490" r="230" fill="#68836A" opacity="0.16" filter="url(#softGlow)"/>
 
-  <!-- Elegant Inner Border Frame -->
-  <rect x="36" y="36" width="1128" height="558" rx="24" fill="none" stroke="#C2A676" stroke-width="1.5" stroke-opacity="0.5"/>
-  <rect x="46" y="46" width="1108" height="538" rx="18" fill="none" stroke="#6E846C" stroke-width="1" stroke-opacity="0.25"/>
+  <!-- Moldura interior sofisticada -->
+  <rect x="36" y="36" width="1128" height="558" rx="24" fill="none" stroke="#C2A676" stroke-width="1.5" stroke-opacity="0.45"/>
+  <rect x="46" y="46" width="1108" height="538" rx="18" fill="none" stroke="#68836A" stroke-width="1" stroke-opacity="0.25"/>
 
-  <!-- Top Monogram badge -->
-  <g transform="translate(600, 140)">
-    <circle cx="0" cy="0" r="44" fill="#FAF8F5" stroke="#C2A676" stroke-width="1.5"/>
-    <text x="0" y="10" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" fill="#C2A676" text-anchor="middle" font-weight="600">MC</text>
+  <!-- Monograma CB centralizado -->
+  <g transform="translate(600, 135)">
+    <circle cx="0" cy="0" r="44" fill="#FAF8F5" stroke="#68836A" stroke-width="1.5"/>
+    <text x="0" y="10" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" fill="#4E6750" text-anchor="middle" font-weight="600">CB</text>
   </g>
 
-  <!-- Text Content -->
-  <text x="600" y="245" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" letter-spacing="6" fill="#6E846C" text-anchor="middle" text-transform="uppercase" font-weight="600">TERAPIA INTEGRATIVA • UBERLÂNDIA - MG</text>
+  <!-- Subtítulo / Categoria -->
+  <text x="600" y="235" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" letter-spacing="6" fill="#68836A" text-anchor="middle" text-transform="uppercase" font-weight="600">PSICÓLOGA CLÍNICA • SALTO - SP &amp; ONLINE</text>
   
-  <text x="600" y="330" font-family="'Cormorant Garamond', Georgia, serif" font-size="64" fill="#2A2E2A" text-anchor="middle" font-weight="500" letter-spacing="1">Matilde Cunha</text>
+  <!-- Nome Principal -->
+  <text x="600" y="325" font-family="'Cormorant Garamond', Georgia, serif" font-size="64" fill="#2D322E" text-anchor="middle" font-weight="500" letter-spacing="1">Psicóloga Carla Brito</text>
 
-  <!-- Gold subtle divider -->
-  <line x1="520" y1="365" x2="680" y2="365" stroke="url(#gold)" stroke-width="2"/>
+  <!-- Linha divisória sutil -->
+  <line x1="510" y1="360" x2="690" y2="360" stroke="url(#gold)" stroke-width="2"/>
 
-  <text x="600" y="420" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="22" fill="#5E655C" text-anchor="middle" font-weight="400">
-    Um espaço acolhedor para cuidar do seu equilíbrio emocional, bem-estar e saúde integral.
+  <!-- Descrição acolhedora -->
+  <text x="600" y="415" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="21" fill="#5C635B" text-anchor="middle" font-weight="400">
+    Um espaço seguro para cuidar da sua saúde emocional com escuta acolhedora, ética e atendimento humanizado.
   </text>
 
-  <!-- Tags / Pills at bottom -->
+  <!-- Badges / Tags no rodapé -->
   <g transform="translate(600, 490)">
-    <rect x="-290" y="-18" width="170" height="36" rx="18" fill="#FFFFFF" stroke="#DED8CE" stroke-width="1"/>
-    <text x="-205" y="5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#526750" text-anchor="middle" font-weight="500">📍 Uberlândia • MG</text>
+    <rect x="-310" y="-18" width="180" height="36" rx="18" fill="#FFFFFF" stroke="#DED8CE" stroke-width="1"/>
+    <text x="-220" y="5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#4E6750" text-anchor="middle" font-weight="500">📍 Salto • SP</text>
 
-    <rect x="-100" y="-18" width="200" height="36" rx="18" fill="#FFFFFF" stroke="#DED8CE" stroke-width="1"/>
-    <text x="0" y="5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#526750" text-anchor="middle" font-weight="500">🌿 Terapia Integrativa</text>
+    <rect x="-110" y="-18" width="220" height="36" rx="18" fill="#FFFFFF" stroke="#DED8CE" stroke-width="1"/>
+    <text x="0" y="5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#4E6750" text-anchor="middle" font-weight="500">🌱 Psicoterapia &amp; Acolhimento</text>
 
-    <rect x="120" y="-18" width="170" height="36" rx="18" fill="#FFFFFF" stroke="#DED8CE" stroke-width="1"/>
-    <text x="205" y="5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#526750" text-anchor="middle" font-weight="500">💬 Presencial &amp; Online</text>
+    <rect x="130" y="-18" width="180" height="36" rx="18" fill="#FFFFFF" stroke="#DED8CE" stroke-width="1"/>
+    <text x="220" y="5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#4E6750" text-anchor="middle" font-weight="500">💬 Presencial &amp; Online</text>
   </g>
 </svg>

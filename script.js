@@ -1,5 +1,5 @@
 /**
- * Matilde Cunha • Terapeuta Integrativa – Uberlândia / MG
+ * Psicóloga Carla Brito • Psicoterapia – Salto / SP & Atendimento Online
  * Script Principal: Áudio Ambiente Terapêutico, Interatividade & SEO UX
  */
 
@@ -279,7 +279,7 @@ function initContactActions() {
   const saveContactBtn = document.getElementById('btnSaveContact');
   const shareSiteBtn = document.getElementById('btnShareSite');
 
-  const addressText = 'Uberlândia - MG • Atendimento Presencial e Online';
+  const addressText = 'Salto - SP • Atendimento Presencial e Online';
 
   // Copiar Endereço
   if (copyAddressBtn) {
@@ -287,7 +287,7 @@ function initContactActions() {
       navigator.clipboard.writeText(addressText).then(() => {
         showToast('✓ Endereço copiado com sucesso!');
       }).catch(() => {
-        showToast('📍 Uberlândia - MG');
+        showToast('📍 Salto - SP');
       });
     });
   }
@@ -298,26 +298,28 @@ function initContactActions() {
       const vcardData = [
         'BEGIN:VCARD',
         'VERSION:3.0',
-        'N:Cunha;Matilde;;Terapeuta Integrativa;',
-        'FN:Matilde Cunha - Terapeuta Integrativa',
-        'ORG:Espaço de Terapia Integrativa Matilde Cunha',
-        'TITLE:Terapeuta Integrativa',
-        'TEL;TYPE=CELL,VOICE,PREF:+5534999999999',
-        'ADR;TYPE=WORK:;;Uberlândia;Uberlândia;MG;;Brasil',
-        'EMAIL;TYPE=INTERNET:contato@matildecunha.com.br',
-        'URL:https://www.instagram.com/matilde.dcunha/',
-        'NOTE:Atendimento de Terapia Integrativa presencial em Uberlândia - MG e online. Instagram: @matilde.dcunha',
+        'N:Brito;Carla;;Psicóloga;',
+        'FN:Psicóloga Carla Brito',
+        'ORG:Consultório de Psicologia Carla Brito',
+        'TITLE:Psicóloga Clínica',
+        'TEL;TYPE=CELL,VOICE,PREF:+5511999999999',
+        'ADR;TYPE=WORK:;;Salto;Salto;SP;;Brasil',
+        'EMAIL;TYPE=INTERNET:contato@carlabritopsicologia.com.br',
+        'URL:https://www.instagram.com/psicologacarlabrito/',
+        'NOTE:Atendimento de Psicoterapia presencial em Salto - SP e online. Foco em ansiedade, autoestima, estresse e autoconhecimento.',
         'END:VCARD'
       ].join('\r\n');
 
       const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
       const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.setAttribute('download', 'Matilde_Cunha_Terapeuta.vcf');
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      const link = document.createElement('link') ? document.createElement('a') : null;
+      if (link) {
+        link.href = url;
+        link.setAttribute('download', 'Carla_Brito_Psicologa.vcf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
       URL.revokeObjectURL(url);
 
       showToast('✓ Contato preparado para salvar no seu celular!');
@@ -328,8 +330,8 @@ function initContactActions() {
   if (shareSiteBtn) {
     shareSiteBtn.addEventListener('click', () => {
       const shareData = {
-        title: 'Matilde Cunha • Terapeuta Integrativa em Uberlândia – MG',
-        text: 'Conheça o espaço acolhedor de terapia integrativa e equilíbrio emocional com Matilde Cunha em Uberlândia – MG:',
+        title: 'Psicóloga Carla Brito • Psicoterapia em Salto – SP & Online',
+        text: 'Conheça o espaço acolhedor de psicoterapia e saúde emocional da Psicóloga Carla Brito em Salto – SP e online:',
         url: window.location.href
       };
 
